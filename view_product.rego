@@ -10,6 +10,5 @@ allow if{
 
 # Helper function to check if the user has a specific authority.
 user_has_authority(required_authority) if{
-    some authority
     input.authorities[_] == required_authority
 }
